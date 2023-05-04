@@ -1,11 +1,8 @@
 <?php 
 $matches = [
-    ['HomeTeam1' => '55',
-    'GuestTeam1' => '60'],
-    ['HomeTeam2' => '14',
-    'GuestTeam2' => '47'],
-    ['HomeTeam3' => '28',
-    'GuestTeam3' => '69'],
+    ['HomeTeam1 - GuestTeam1' => '55 - 60'],
+    ['HomeTeam2 - GuestTeam2' => '50 - 78'],
+    ['HomeTeam3 - GuestTeam3' => '17 - 98'],
 ]
 ?>
 
@@ -20,7 +17,7 @@ $matches = [
 <body>
     <?php foreach ($matches as $match) : ?>
     <?php foreach ($match as $team => $points) : ?>
-        <p><?= $team; ?>: <span><?= $points; ?></span></p>
+        <p><?= $team; ?> | <span><?= $points; ?></span></p>
     <?php endforeach ?>
     <?php endforeach ?> 
     
